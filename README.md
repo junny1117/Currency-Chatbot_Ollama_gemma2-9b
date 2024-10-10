@@ -19,7 +19,7 @@ Langchain, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
    - 예: 현찰 살때 환율은 얼마니? 등의 질문
 
 2. **웹 크롤링**:
-   - 챗봇은 Selenium을 사용하여 다음 검색 - 환율+국가명 [예시](https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=환율미국)에서 해당 국가 환율 정보 크롤링
+   - Selenium을 사용하여 다음 검색 - 환율+국가명 [예시](https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=환율미국)에서 해당 국가 환율 정보 크롤링
 
 3. **문서 분할**:
    - 크롤링한 데이터를 문서 형식으로 변환하여 `RecursiveCharacterTextSplitter`를 사용해 효과적으로 검색할 수 있도록 분할
