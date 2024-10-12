@@ -9,7 +9,7 @@ Ollama, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
   - 전일 대비 차이 및 변동률
   - 현찰 살 때와 팔 때의 환율
   - 송금 보낼 때와 받을 때의 환율
-- FAISS를 이용한 문서 검색 기능으로 사용자 질문에 대한 답변 성능 향상
+- `FAISS`를 이용한 문서 검색 기능으로 사용자 질문에 대한 답변 성능 향상
 - 언어 모델을 사용하여 자연어로 답변 제공
 
 ## 작동 과정
@@ -19,13 +19,13 @@ Ollama, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
    - 예: 현찰 살때 환율은 얼마니? 등의 질문
 
 2. **웹 크롤링**:
-   - Selenium을 사용하여 다음 검색 - 환율+국가명 [예시](https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=환율미국)에서 해당 국가 환율 정보 크롤링
+   - `Selenium`을 사용하여 다음 검색 - 환율+국가명 [예시](https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=환율미국)에서 해당 국가 환율 정보 크롤링
 
 3. **문서 분할**:
    - 크롤링한 데이터를 문서 형식으로 변환하여 `RecursiveCharacterTextSplitter`를 사용해 효과적으로 검색할 수 있도록 분할
 
 4. **유사도 검색**:
-   - FAISS를 사용해 유사도 검색 인덱스를 구축하여, 사용자 질문에 맞는 문서 검색.
+   - `FAISS`를 사용해 유사도 검색 인덱스를 구축하여, 사용자 질문에 맞는 문서 검색.
 
 5. **답변**:
    - `ChatOllama`를 이용해 검색된 문서의 내용을 바탕으로 자연어로 답변을 생성.
