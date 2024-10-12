@@ -1,6 +1,6 @@
-# Langchain_Currency-Chatbot
+# Ollama_Currency-Chatbot
 ## 개요
-Langchain, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
+Ollama, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
 
 ## 주요 기능
 - 사용자가 원하는 국가의 환율 정보를 크롤링을 통해 실시간으로 수집
