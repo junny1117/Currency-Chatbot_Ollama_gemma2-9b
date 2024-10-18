@@ -1,9 +1,9 @@
-# Ollama_Currency-Chatbot
+# Currnecy-Chatbot_Ollama_gemma2-9b
 ## 개요
-Ollama, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
+Langchain, Ollama, Streamlit을을 활용한 환율 정보 제공 챗봇
 
 ## 주요 기능
-- 사용자가 원하는 국가의 환율 정보를 크롤링을 통해 실시간으로 수집
+- 사용자가 원하는 국가의 환율 정보를 크롤링을 통해 수집
 - 수집되는 데이터:
   - 현재 환율(매매기준율)
   - 전일 대비 차이 및 변동률
@@ -28,14 +28,18 @@ Ollama, Selenium, Streamlit을 활용한 환율 정보 제공 챗봇
    - `FAISS`를 사용해 유사도 검색 인덱스를 구축하여, 사용자 질문에 맞는 문서 검색.
 
 5. **답변**:
-   - `ChatOllama`를 이용해 검색된 문서의 내용을 바탕으로 자연어로 답변을 생성.
+   - `ChatOllama` 라이브러리 및 gemma2:9b 모델을 이용해 검색된 문서의 내용을 바탕으로 자연어로 답변을 생성.
 
 ## 사용도구/기술
 - **Selenium**: 웹 크롤링
-- **Streamlit**: 사용자 인터페이스를 위한 프레임워크
-- **FAISS**: 유사도 검색 기능
-- **Langchain**: LLM 프레임워크
-- **ChatOllama**: 대화형 응답 생성
+- **Streamlit**: 사용자 인터페이스
+- **FAISS**: 문서 유사도 검색
+- **Langchain**: LLM 활용 애플리케이션 개발 프레임워크
+- **ChatOllama**: 언어모델 실행 도구
+- **gemma2:9b**: 언어모델 
 
 ## 실행 결과 이미지
+![스크린샷 2024-10-17 153242](https://github.com/user-attachments/assets/4c5bafd4-5512-48e5-bc78-f0cc436d26ab)
+![스크린샷 2024-10-17 153242](https://github.com/user-attachments/assets/f39105e1-00c9-43ba-b249-1d211b6add6d)
+
 
