@@ -53,7 +53,7 @@ def currency_info(search):
     return app_data
 
 def main():
-    st.title("환율 정보 제공 챗봇")
+    st.title("환율 챗봇")
     search = st.text_input("국가 이름을 입력하세요:(예: 미국)", "")
     query = st.text_input("궁금한 것을 입력하세요:(예: 환율, 송금 보낼때, 현찰 살때)", "")
     
