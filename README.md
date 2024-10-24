@@ -43,7 +43,8 @@ Langchain, Ollama, Streamlit을을 활용한 환율 정보 제공 챗봇
 - **Windows**: 운영체제
 
 ## 실행 결과 이미지
-![스크린샷 2024-10-17 153242](https://github.com/user-attachments/assets/4c5bafd4-5512-48e5-bc78-f0cc436d26ab)
-![스크린샷 2024-10-17 153242](https://github.com/user-attachments/assets/f39105e1-00c9-43ba-b249-1d211b6add6d)
+![스크린샷 2024-10-24 172805](https://github.com/user-attachments/assets/adb00a4d-e894-4423-8f87-be24a9d5834f)
+![스크린샷 2024-10-24 172849](https://github.com/user-attachments/assets/65891377-19e0-4baa-a9e2-083c08a18f8b)
+
 
 
