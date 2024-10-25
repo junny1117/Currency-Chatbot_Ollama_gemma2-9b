@@ -23,13 +23,13 @@ Langchain, Ollama, Streamlit을 활용한 환율 정보 제공 챗봇
    - `Selenium`을 사용하여 다음 검색 - 환율+국가명 [예시](https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=환율미국)에서 해당 국가 환율 정보 크롤링
 
 3. **문서 분할**:
-   - 크롤링한 데이터를 문서 형식으로 변환하여 `RecursiveCharacterTextSplitter`를 사용해 효과적으로 검색할 수 있도록 분할
+   - 크롤링한 데이터를 문장 형식으로 변환하여 `RecursiveCharacterTextSplitter`를 사용해 효과적으로 검색할 수 있도록 분할
 
 4. **유사도 검색**:
-   - `FAISS`를 사용해 유사도 검색 인덱스를 구축하여, 사용자 질문에 맞는 문서 검색.
+   - `FAISS`를 사용해 유사도 검색 인덱스를 구축하여, 사용자 질문에 맞는 내용 검색.
 
 5. **답변**:
-   - `ChatOllama` 및 gemma2:9b 모델을 이용해 검색된 문서의 내용을 바탕으로 자연어로 답변을 생성.
+   - `ChatOllama` 및 gemma2:9b 모델을 이용해 검색된 내용을 바탕으로 자연어로 답변을 생성.
 
 ## 사용도구/기술
 - **Python**: 개발언어
